@@ -8,17 +8,30 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="font-sans text-gray-800 bg-white">
-  <header class="bg-red-600 text-white py-8">
-    <div class="container max-w-6xl mx-auto px-4 text-center">
-      <h1 class="text-4xl font-bold mb-2">Museum Eyes</h1>
-      <p class="text-xl font-light">A digital museum guide for blind people</p>
-    </div>
-  </header>
+    <header class="bg-red-600 text-white py-4">
+        <div class="container mx-auto px-2 sm:px-4 w-full">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+              <h1 class="text-3xl font-bold">Museum Eyes</h1>
+              <p class="text-lg font-light ml-4 hidden md:block">A digital museum guide for blind</p>
+            </div>
+            <nav>
+              <ul class="flex flex-wrap justify-center gap-6">
+                <li><a href="#overview" class="hover:text-red-200 font-medium transition-colors">Overview</a></li>
+                <li><a href="#needfinding" class="hover:text-red-200 font-medium transition-colors">Needfinding</a></li>
+                <li><a href="#storyboard" class="hover:text-red-200 font-medium transition-colors">Storyboard</a></li>
+                <li><a href="#prototype" class="hover:text-red-200 font-medium transition-colors">Prototype</a></li>
+                <li><a href="#demo" class="hover:text-red-200 font-medium transition-colors">Demo</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+    </header>
   
-  <main class="container max-w-6xl mx-auto px-4">
-    <section id="overview" class="py-8 border-b border-gray-200">
+  <main class="container mx-auto px-2 sm:px-4 w-full pt-6">
+    <section id="overview" class="py-8 border-b border-gray-200 scroll-mt-24">
       <h2 class="text-3xl font-bold text-red-600 mb-6">Project Overview</h2>
-      <img src="prototype2.png" alt="Prototype view 2: Side view of the Museum Eyes device" class="rounded-lg shadow-md w-1/2 mx-auto mb-8">
+      <img src="prototype2.png" alt="Prototype view 2: Side view of the Museum Eyes device" class="rounded-lg shadow-md w-1/3 mx-auto mb-8">
       
       <div class="bg-gray-50 border-l-4 border-red-600 p-6 my-6 rounded-r">
         <h3 class="text-2xl font-semibold text-red-600 mb-3">Problem Statement</h3>
@@ -26,7 +39,7 @@
       </div>
       
       <h3 class="text-2xl font-semibold text-red-600 mt-6 mb-4"> Solution</h3>
-      <p class="mb-4">Museum Eyes is a wearable device that serves as a digital museum assistant to help blind people navigate and interpret museum exhibitions. The wearable device interacts with an internal scan of the museum to navigate users, tactile floor patterns to detect exhibits, and AI to generate exhibit descriptions..</p>
+      <p class="mb-4">Museum Eyes is a wearable device that serves as a digital museum assistant to help blind people navigate and interpret museum exhibitions. The wearable device interacts with an internal scan of the museum to navigate users, tactile floor patterns to detect exhibits, and AI to generate exhibit descriptions.</p>
       
       <p class="mb-2">Key features include:</p>
       <ul class="list-disc pl-8 mb-6">
@@ -36,7 +49,7 @@
       </ul>
     </section>
     
-    <section id="needfinding" class="py-8 border-b border-gray-200">
+    <section id="needfinding" class="py-8 border-b border-gray-200 scroll-mt-24">
       <h2 class="text-3xl font-bold text-red-600 mb-6">Needfinding Process</h2>
       <p class="mb-4">Our needfinding process involved extensive research into the challenges faced by visually impaired museum visitors, interviews with accessibility coordinators, and analysis of first-person accounts from blind individuals about their museum experiences.</p>
       
@@ -51,69 +64,69 @@
       <p class="mb-2">We created an affinity diagram to organize our research findings and identify key themes. The diagram revealed that physical / digital navigation, engagement, and the social experience of museums are the most pressing needs for improving museum accessibility.</p>
       
       <div class="flex flex-wrap justify-center gap-4 my-6">
-        <div class="max-w-lg">
+        <div class="max-w-xl">
           <img src="affinitydiagram.png" alt="Affinity diagram showing our research findings and key themes" class="rounded-lg shadow-md w-full h-full">
         </div>
       </div>
     </section>
     
-    <section id="storyboard" class="py-8 border-b border-gray-200">
+    <section id="storyboard" class="py-8 border-b border-gray-200 scroll-mt-24">
       <h2 class="text-3xl font-bold text-red-600 mb-6">Storyboard</h2>
       <p class="mb-4">Our storyboard illustrates how a visually impaired visitor would interact with our AI-powered alt text generator in a museum setting.</p>
       
-      <div class="flex flex-wrap justify-center gap-4 my-6">
-        <div class="max-w-sm">
+      <div class="flex flex-wrap justify-center gap-6 my-6">
+        <div class="max-w-md">
           <img src="storyboard1.JPEG" alt="Storyboard panel 1: User starts guided tour with Museum Eyes" class="rounded-lg shadow-md w-full h-full object-cover">
         </div>
-        <div class="max-w-sm">
+        <div class="max-w-md">
             <img src="storyboard2.JPEG" alt="Storyboard panel 2: User is voice guided from Museum Eyes device to exhibit 1" class="rounded-lg shadow-md w-full h-full object-cover">
-          </div>
+        </div>
       </div>
-      <div class="flex flex-wrap justify-center gap-4 my-6">
-        <div class="max-w-sm">
+      <div class="flex flex-wrap justify-center gap-6 my-6">
+        <div class="max-w-md">
           <img src="storyboard3.JPEG" alt="Storyboard panel 3: User is instructed to take a camera scan of exhibit using device" class="rounded-lg shadow-md w-full h-full object-cover">
         </div>
-        <div class="max-w-sm">
+        <div class="max-w-md">
             <img src="storyboard4.JPEG" alt="Storyboard panel 4: User recieves brief description of exhibit" class="rounded-lg shadow-md w-full h-full object-cover">
-          </div>
+        </div>
       </div>
-      <div class="flex flex-wrap justify-center gap-4 my-6">
-        <div class="max-w-sm">
+      <div class="flex flex-wrap justify-center gap-6 my-6">
+        <div class="max-w-md">
           <img src="storyboard5.JPEG" alt="Storyboard panel 5: User asks for a more detailed description and recieves it" class="rounded-lg shadow-md w-full h-full object-cover">
         </div>
       </div>
     </section>
 
-    <section id="prototype" class="py-8 border-b border-gray-200">
+    <section id="prototype" class="py-8 border-b border-gray-200 scroll-mt-24">
         <h2 class="text-3xl font-bold text-red-600 mb-6">Prototype</h2>
         <p class="mb-4">This is a mid-fidelity prototype of the Museum Eyes device.</p>
         
-        <div class="flex flex-wrap justify-center gap-4 my-6">
-          <div class="max-w-lg">
+        <div class="flex flex-wrap justify-center gap-6 my-6">
+          <div class="max-w-xl">
             <img src="prototype1.png" alt="Prototype view 1: Front view of the Museum Eyes device" class="rounded-lg shadow-md w-full">
             <p class="text-sm text-gray-600 mt-2 text-center">App home screen when starting tour</p>
           </div>
-          <div class="max-w-lg">
+          <div class="max-w-xl">
             <img src="prototype2.png" alt="Prototype view 2: Side view of the Museum Eyes device" class="rounded-lg shadow-md w-full">
             <p class="text-sm text-gray-600 mt-2 text-center">App screen when accessing exhibit</p>
           </div>
         </div>
     </section>
 
-    <section id="demo" class="py-8 border-b border-gray-200">
+    <section id="demo" class="py-8 border-b border-gray-200 scroll-mt-24">
         <h2 class="text-3xl font-bold text-red-600 mb-6">Demo</h2>
         <p class="mb-4">We demonstrated our prototype using the Wizard of Oz method as shown through the demo video and snapshots.</p>
         
-        <div class="flex flex-wrap justify-center gap-6 my-6">
-            <div class="w-56">
+        <div class="flex flex-wrap justify-center gap-8 my-6">
+            <div class="w-72">
               <img src="demo1.jpg" alt="Demo snapshot 1: User looking" class="rounded-lg shadow-md w-full h-64 object-cover">
               <p class="text-sm text-gray-600 mt-2 text-center break-words">User finding an exhibit through tactile floor patterns</p>
             </div>
-            <div class="w-56">
+            <div class="w-72">
               <img src="demo2.jpg" alt="Demo snapshot 2: Close-up of device interaction" class="rounded-lg shadow-md w-full h-64 object-cover">
               <p class="text-sm text-gray-600 mt-2 text-center break-words">User wearing the Museum Eyes Device</p>
             </div>
-            <div class="w-56">
+            <div class="w-72">
               <img src="demo3.jpg" alt="Demo snapshot 3: User receiving audio feedback" class="rounded-lg shadow-md w-full h-64 object-cover">
               <p class="text-sm text-gray-600 mt-2 text-center break-words">User scanning exhibit through Museum Eyes Device</p>
             </div>
@@ -123,9 +136,9 @@
   </main>
   
   <footer class="bg-gray-100 py-8 text-center text-gray-600">
-    <div class="container max-w-6xl mx-auto px-4">
-      <p>CP341 Final Project - AI-powered Alt Text Generator for Blind People</p>
-      <p>&copy; 2025</p>
+    <div class="container mx-auto px-4 w-full">
+      <p>CP341 Final Project</p>
+      <p>Team: Zachary Smith,  Kaylie Stuteville, Ronan Takizawa, Anna Vu </p>
     </div>
   </footer>
 </body>
