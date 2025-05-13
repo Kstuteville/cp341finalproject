@@ -1,6 +1,8 @@
 # cp341finalproject
 Website for CP341 Final Project
 
+Our fully Accessible Website!
+
 
 https://ronantakizawa.github.io/cp341finalproject/ 
 
